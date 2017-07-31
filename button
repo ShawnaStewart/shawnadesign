@@ -1,0 +1,58 @@
+<button id="button">Designer</button> 
+*{
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:4px;
+  background: #fff;
+  border: 2px solid #0092DC;
+  color:#0092DC;
+  letter-spacing:1px;
+  text-shadow:0;
+  font:{
+    size:13px;
+    weight:bold;
+  }
+  cursor: pointer;
+  transition: all 0.25s ease;
+  &:hover {
+    color:white;
+    background: #0092DC;
+  }
+  &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px ;
+  }
+  &:after {
+    content:"DESIGNER";
+  }
+}
+.onclic {
+  width: 40px;
+  border-color:#0092DC;
+  border-width:3px;
+  font-size:0;
+  border-left-color:#0092DC;
+  animation: rotating 2s 0.25s linear infinite;
+
+  &:after {
+    content:"";
+  }
+  &:hover {
+    color:#0092DC;
+    background: white;
+  }
+}
+.validate {
+  font-size:13px;
+  color: white;
+  background: #0092DC;
+  &:after {
+    font-family:'FontAwesome';
+    content:"\f00c";
+  }
+}
